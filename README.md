@@ -324,7 +324,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
- 2024 | HydraGen                | Single/Multi-GPU Design   |      |      |      |
+| 2024 | HydraGen               | Single/Multi-GPU Design   |      |      |      |
 | 2024 | DeFT                   | Single/Multi-GPU Design   |      |      |      |
 | 2023 | vLLM                   | Single/Multi-GPU Design   |      |      |      |
 | 2022 | ORCA                   | Single/Multi-GPU Design   |      |      |      |
