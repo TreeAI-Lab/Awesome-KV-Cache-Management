@@ -176,19 +176,54 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+| 2023 | vLLM                    | Architectural Design      |      |      |      |
+| 2024 | vTensor                 | Architectural Design      |      |      |      |
+| 2024 | LeanKV                  | Architectural Design      |      |      |      |
+| 2024 | ChunkAttention          | Prefix-aware Design       |      |      |      |
+| 2024 | MemServe                | Prefix-aware Design       |      |      |      |
+
+
 
 ### Scheduling
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+| 2024 | BatchLLM                | Prefix-aware Scheduling   |      |      |      |
+| 2024 | RadixAttention          | Prefix-aware Scheduling   |      |      |      |
+| 2024 | FastServe               | Preemptive and Fairness-oriented Scheduling |      |      |      |
+| 2024 | FastSwitch              | Preemptive and Fairness-oriented Scheduling |      |      |      |
+| 2024 | LayerKV                 | Layer-specific and Hierarchical Scheduling  |      |      |      |
+| 2024 | CachedAttention         | Layer-specific and Hierarchical Scheduling  |      |      |      |
+| 2024 | ALISA                   | Layer-specific and Hierarchical Scheduling  |      |      |      |
+| 2024 | LAMPS                   | Layer-specific and Hierarchical Scheduling  |      |      |      |
+
 
 ### Hardware-aware Design
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+ 2024 | HydraGen                | Single/Multi-GPU Design   |      |      |      |
+| 2024 | DeFT                   | Single/Multi-GPU Design   |      |      |      |
+| 2023 | vLLM                   | Single/Multi-GPU Design   |      |      |      |
+| 2022 | ORCA                   | Single/Multi-GPU Design   |      |      |      |
+| 2024 | DistServe              | Single/Multi-GPU Design   |      |      |      |
+| 2024 | Multi-Bin Batching     | Single/Multi-GPU Design   |      |      |      |
+| 2024 | Tree Attention         | Single/Multi-GPU Design   |      |      |      |
+| 2022 | FlashAttention          | I/O-based Design         |      |      |      |
+| 2024 | Bifurcated Attention    | I/O-based Design         |      |      |      |
+| 2024 | PartKVRec               | I/O-based Design         |      |      |      |
+| 2024 | HCache                  | I/O-based Design         |      |      |      |
+| 2024 | Cake                    | I/O-based Design         |      |      |      |
+| 2024 | FastSwitch              | I/O-based Design         |      |      |      |
+| 2024 | NEO                     | Heterogeneous Design      |      |      |      |
+| 2024 | FastDecode              | Heterogeneous Design      |      |      |      |
+| 2024 | FlexInfer               | Heterogeneous Design      |      |      |      |
+| 2024 | InfiniGen               | Heterogeneous Design      |      |      |      |
+| 2023 | Pensieve                | Heterogeneous Design      |      |      |      |
+| 2024 | FastServe               | Heterogeneous Design      |      |      |      |
+| 2024 | PartKVRec               | Heterogeneous Design      |      |      |      |
+| 2023 | FlexGen                 | SSD-based Design         |      |      |      |
+| 2024 | InstInfer               | SSD-based Design         |      |      |      |
 
 ---
 
