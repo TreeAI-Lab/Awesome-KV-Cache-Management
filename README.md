@@ -60,15 +60,15 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|| FastGen | Static KV Cache Selection ||||
-|| SnapKV | Static KV Cache Selection ||||
-|| Attention-Gate | Static KV Cache Selection ||||
+|2024| Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs | Static KV Cache Selection |arXiv|[Link](https://arxiv.org/abs/2310.01801)||
+|2024| SnapKV: LLM Knows What You are Looking for Before Generation | Static KV Cache Selection |arXiv|[Link](https://arxiv.org/abs/2404.14469)|[Link](https://github.com/FasterDecoding/SnapKV)|
+|2024| Attention-Gate | Static KV Cache Selection |arXiv|[Link](https://arxiv.org/abs/2410.12876)||
 
 ### Dynamic Selection with Permanent Eviction
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|| H2O | Dynamic Selection with Permanent Eviction ||||
+|2023| H2O | Dynamic Selection with Permanent Eviction |arXiv|[Link](https://arxiv.org/abs/2306.14048)|[Link](https://github.com/FMInference/H2O)|
 || BUZZ | Dynamic Selection with Permanent Eviction ||||
 || NACL | Dynamic Selection with Permanent Eviction ||||
 || Scissorhands | Dynamic Selection with Permanent Eviction ||||
@@ -94,6 +94,8 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ### Head-wise Budget Allocation
 
+| Year | Title | Type | Venue | Paper | code |
+| ---- | ----- | ---- | ----- | ----- | ---- |
 ||AdaKV|Head-wise Budget Allocation||||
 ||CriticalKV|Head-wise Budget Allocation||||
 ||LeanKV|Head-wise Budget Allocation||||
