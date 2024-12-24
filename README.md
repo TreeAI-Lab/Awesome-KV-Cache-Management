@@ -126,19 +126,47 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+| 2019 | MQA                     | Grouped Attention        |      |      |      |
+| 2023 | GQA                     | Grouped Attention        |      |      |      |
+| 2024 | AsymGQA                 | Grouped Attention        |      |      |      |
+| 2024 | Weighted GQA            | Grouped Attention        |      |      |      |
+| 2024 | QCQA                    | Grouped Attention        |      |      |      |
+| 2024 | KDGQA                   | Grouped Attention        |      |      |      |
+| 2023 | GQKVA                   | Grouped Attention        |      |      |      |
+| 2024 | MLA                     | Compression              |      |      |      |
+| 2024 | MatryoshkaKV            | Compression              |      |      |      |
+| 2022 | FLASH                   | Extended Mechanism       |      |      |      |
+| 2024 | Infini-Attention        | Extended Mechanism       |      |      |      |
 
 ### Cross Layer 
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+| 2024 | CLA                     | Cache Sharing            |      |      |      |
+| 2024 | LCKV                    | Cache Sharing            |      |      |      |
+| 2024 | SA                      | Cache Sharing            |      |      |      |
+| 2024 | DHA                     | Cache Sharing            |      |      |      |
+| 2024 | MLKV                    | Cache Sharing            |      |      |      |
+| 2024 | Wu et al.               | Cache Sharing            |      |      |      |
+| 2024 | LISA                    | Cache Sharing            |      |      |      |
+| 2024 | SVFormer                | Cache Sharing            |      |      |      |
+| 2024 | YOCO                    | Compression              |      |      |      |
+| 2024 | CLLA                    | Compression              |      |      |      |
+| 2024 | CEPE                    | Augmented Architectures  |      |      |      |
+| 2024 | XC-Cache                | Augmented Architectures  |      |      |      |
+| 2024 | Block Transformer       | Augmented Architectures  |      |      |      |
 
 ### Non-transformer Architecture
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|||||||
+| 2023 | RWKV                    | New Architecture         |      |      |      |
+| 2024 | Mamba                   | New Architecture         |      |      |      |
+| 2023 | RetNet                  | New Architecture         |      |      |      |
+| 2024 | MCSD                    | New Architecture         |      |      |      |
+| 2024 | MixCon                  | Hybrid Architecture      |      |      |      |
+| 2024 | GoldFinch               | Hybrid Architecture      |      |      |      |
+| 2024 | RecurFormer             | Hybrid Architecture      |      |      |      |
 
 ---
 
