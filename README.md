@@ -68,11 +68,11 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|2023| H2O: heavy-hitter oracle for efficient generative inference of large language models | Dynamic Selection with Permanent Eviction |NeurIPS|[Link](https://arxiv.org/pdf/2306.14048)|[Link](https://github.com/FMInference/H2O)|
+|2024| Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference | Dynamic Selection with Permanent Eviction |MLSys|[Link](https://arxiv.org/pdf/2403.09054)||
 |2024| BUZZ: Beehive-structured Sparse KV Cache with Segmented Heavy Hitters for Efficient LLM Inference | Dynamic Selection with Permanent Eviction |arXiv|[Link](https://arxiv.org/pdf/2410.23079)|[Link](https://github.com/JunqiZhao888/buzz-llm)|
 |2024| NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time | Dynamic Selection with Permanent Eviction |ACL|[Link](https://arxiv.org/pdf/2408.03675)|[Link](https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2024-NACL)|
+|2023| H2O: heavy-hitter oracle for efficient generative inference of large language models | Dynamic Selection with Permanent Eviction |NeurIPS|[Link](https://arxiv.org/pdf/2306.14048)|[Link](https://github.com/FMInference/H2O)|
 |2023| Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time | Dynamic Selection with Permanent Eviction |NeurIPS|[Link](https://arxiv.org/pdf/2305.17118)||
-|2024| Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference | Dynamic Selection with Permanent Eviction |MLSys|[Link](https://arxiv.org/pdf/2403.09054)||
 
 ### Dynamic Selection without Permanent Eviction
 
@@ -137,10 +137,11 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 | Year | Title | Type | Venue | Paper | code |
 | ---- | ----- | ---- | ----- | ----- | ---- |
-|2022|ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers|Fixed-precision Quantization|NIPS|[Link](https://arxiv.org/pdf/2206.01861)|[Link](https://github.com/microsoft/DeepSpeed)|
-|2023|FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU|Fixed-precision Quantization|ICML|[Link](https://proceedings.mlr.press/v202/sheng23a.html)|[Link](https://github.com/FMInference/FlexLLMGen)|
 |2024|QJL: 1-Bit Quantized JL Transform for KV Cache Quantization with Zero Overhead|Fixed-precision Quantization|arXiv|[Link](https://arxiv.org/pdf/2406.03482)|[Link](https://github.com/amirzandieh/QJL)|
 |2024|PQCache: Product Quantization-based KVCache for Long Context LLM Inference|Fixed-precision Quantization|arXiv|[Link](https://arxiv.org/pdf/2407.12820)||
+|2023|FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU|Fixed-precision Quantization|ICML|[Link](https://proceedings.mlr.press/v202/sheng23a.html)|[Link](https://github.com/FMInference/FlexLLMGen)|
+|2022|ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers|Fixed-precision Quantization|NIPS|[Link](https://arxiv.org/pdf/2206.01861)|[Link](https://github.com/microsoft/DeepSpeed)|
+
 
 ### Mixed-precision Quantization
 
@@ -165,7 +166,6 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 |2024|Massive Activations in Large Language Models|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2402.17762)|[Link](https://github.com/locuslab/massive-activations)|
 |2024|QuaRot: Outlier-Free 4-Bit Inference in Rotated LLMs|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2404.00456)|[Link](https://github.com/spcl/QuaRot)|
 |2024|QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2405.04532)|[Link](https://github.com/mit-han-lab/qserve)|
-|2023| Training Transformers with 4-bit Integers                    |Outlier Redistribution|NeurIPS|[Link](https://proceedings.neurips.cc//paper_files/paper/2023/hash/99fc8bc48b917c301a80cb74d91c0c06-pdftract-Conference.html)|[Link](https://github.com/xijiu9/Train_Transformers_with_INT4)|
 |2024|SpinQuant: LLM Quantization with Learned Rotations|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2405.16406)|[Link](https://github.com/facebookresearch/SpinQuant)|
 |2024| DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs |Outlier Redistribution|NeurIPS|[Link](https://arxiv.org/pdf/2406.01721)|[Link](https://github.com/Hsu1023/DuQuant)|
 |2024|SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models|Outlier Redistribution|ICML|[Link](https://proceedings.mlr.press/v202/xiao23c.html)|[Link](https://github.com/mit-han-lab/smoothquant)|
@@ -174,6 +174,8 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 |2024|FlatQuant: Flatness Matters for LLM Quantization|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2410.09426)|[Link](https://github.com/ruikangliu/FlatQuant)|
 |2024|AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration|Outlier Redistribution|MLSys|[Link](https://proceedings.mlsys.org/paper_files/paper/2024/hash/42a452cbafa9dd64e9ba4aa95cc1ef21-pdftract-Conference.html)|[Link](https://github.com/mit-han-lab/llm-awq)|
 |2023|OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models|Outlier Redistribution|arXiv|[Link](https://arxiv.org/pdf/2308.13137)|[Link](https://github.com/OpenGVLab/OmniQuant)|
+|2023| Training Transformers with 4-bit Integers                    |Outlier Redistribution|NeurIPS|[Link](https://proceedings.neurips.cc//paper_files/paper/2023/hash/99fc8bc48b917c301a80cb74d91c0c06-pdftract-Conference.html)|[Link](https://github.com/xijiu9/Train_Transformers_with_INT4)|
+
 
 ## KV Cache Low-rank Decomposition
 
