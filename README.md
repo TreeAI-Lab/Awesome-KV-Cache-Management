@@ -290,11 +290,11 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ### Architectural Design
 
-| Year | Title   | Type                 | Venue | Paper                                                   | code                                      |
-| ---- | ------- | -------------------- | ----- | ------------------------------------------------------- | ----------------------------------------- |
-| 2023 | vLLM    | Architectural Design | SOSP  | [link](https://dl.acm.org/doi/pdf/10.1145/3600006.3613165) | [link](https://github.com/vllm-project/vllm) |
-| 2024 | vTensor | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2407.15309)                   | [link](https://github.com/antgroup/glake)    |
-| 2024 | LeanKV  | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2412.03131)                   | -                                         |
+| Year | Title   | Type                 | Venue | Paper                                 | code                                      |
+| ---- | ------- | -------------------- | ----- | ------------------------------------- | ----------------------------------------- |
+| 2023 | vLLM    | Architectural Design | SOSP  | [link](https://arxiv.org/pdf/2309.06180) | [link](https://github.com/vllm-project/vllm) |
+| 2024 | vTensor | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2407.15309) | [link](https://github.com/antgroup/glake)    |
+| 2024 | LeanKV  | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2412.03131) | -                                         |
 
 ### Prefix-aware Design
 
