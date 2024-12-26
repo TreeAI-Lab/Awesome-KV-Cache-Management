@@ -290,87 +290,87 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ### Architectural Design
 
-| Year | Title   | Type                 | Venue | Paper                                 | code                                      |
-| ---- | ------- | -------------------- | ----- | ------------------------------------- | ----------------------------------------- |
-| 2023 | vLLM    | Architectural Design | SOSP  | [link](https://arxiv.org/pdf/2309.06180) | [link](https://github.com/vllm-project/vllm) |
-| 2024 | vTensor | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2407.15309) | [link](https://github.com/antgroup/glake)    |
-| 2024 | LeanKV  | Architectural Design | arXiv | [link](https://arxiv.org/pdf/2412.03131) | -                                         |
+| Year | Title   | Type                 | Venue | Paper                                    | code                                         |
+| ---- | ------- | -------------------- | ----- | ---------------------------------------- | -------------------------------------------- |
+| 2024 | vTensor | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2407.15309) | [Link](https://github.com/antgroup/glake)    |
+| 2024 | LeanKV  | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2412.03131) |                                              |
+| 2023 | vLLM    | Architectural Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180) | [Link](https://github.com/vllm-project/vllm) |
 
 ### Prefix-aware Design
 
-| Year | Title          | Type                | Venue | Paper                                 | code                                              |
-| ---- | -------------- | ------------------- | ----- | ------------------------------------- | ------------------------------------------------- |
-| 2024 | ChunkAttention | Prefix-aware Design | ACL   | [link](https://arxiv.org/pdf/2402.15220) | [link](https://github.com/microsoft/chunk-attention) |
-| 2024 | MemServe       | Prefix-aware Design | arXiv | [link](https://arxiv.org/pdf/2406.17565) | -                                                 |
+| Year | Title          | Type                | Venue | Paper                                    | code                                                 |
+| ---- | -------------- | ------------------- | ----- | ---------------------------------------- | ---------------------------------------------------- |
+| 2024 | ChunkAttention | Prefix-aware Design | ACL   | [Link](https://arxiv.org/pdf/2402.15220) | [Link](https://github.com/microsoft/chunk-attention) |
+| 2024 | MemServe       | Prefix-aware Design | arXiv | [Link](https://arxiv.org/pdf/2406.17565) |                                                      |
 
 ## Scheduling
 
 ### Prefix-aware Scheduling
 
-| Year | Title          | Type                    | Venue   | Paper                                 | code                                       |
-| ---- | -------------- | ----------------------- | ------- | ------------------------------------- | ------------------------------------------ |
-| 2024 | BatchLLM       | Prefix-aware Scheduling | arXiv   | [link](https://arxiv.org/pdf/2412.03594) | -                                          |
-| 2024 | RadixAttention | Prefix-aware Scheduling | NeurIPS | [link](https://arxiv.org/pdf/2312.07104) | [link](https://github.com/sgl-project/sglang) |
+| Year | Title          | Type                    | Venue   | Paper                                    | code                                          |
+| ---- | -------------- | ----------------------- | ------- | ---------------------------------------- | --------------------------------------------- |
+| 2024 | BatchLLM       | Prefix-aware Scheduling | arXiv   | [Link](https://arxiv.org/pdf/2412.03594) |                                               |
+| 2024 | RadixAttention | Prefix-aware Scheduling | NeurIPS | [Link](https://arxiv.org/pdf/2312.07104) | [Link](https://github.com/sgl-project/sglang) |
 
 ### Preemptive and Fairness-oriented Scheduling
 
-| Year | Title      | Type                                        | Venue | Paper                                 | code |
-| ---- | ---------- | ------------------------------------------- | ----- | ------------------------------------- | ---- |
-| 2024 | FastServe  | Preemptive and Fairness-oriented Scheduling | arXiv | [link](https://arxiv.org/pdf/2305.05920) | -    |
-| 2024 | FastSwitch | Preemptive and Fairness-oriented Scheduling | arXiv | [link](https://arxiv.org/pdf/2411.18424) | -    |
+| Year | Title      | Type                                        | Venue | Paper                                    | code |
+| ---- | ---------- | ------------------------------------------- | ----- | ---------------------------------------- | ---- |
+| 2024 | FastServe  | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2305.05920) |      |
+| 2024 | FastSwitch | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2411.18424) |      |
 
 ### Layer-specific and Hierarchical Scheduling
 
-| Year | Title           | Type                                       | Venue      | Paper                                 | code                                   |
-| ---- | --------------- | ------------------------------------------ | ---------- | ------------------------------------- | -------------------------------------- |
-| 2024 | LayerKV         | Layer-specific and Hierarchical Scheduling | arXiv      | [link](https://arxiv.org/pdf/2410.00428) | [link](https://github.com/antgroup/glake) |
-| 2024 | CachedAttention | Layer-specific and Hierarchical Scheduling | USENIX ATC | [link](https://arxiv.org/pdf/2403.19708) | -                                      |
-| 2024 | ALISA           | Layer-specific and Hierarchical Scheduling | ISCA       | [link](https://arxiv.org/pdf/2403.17312) | -                                      |
-| 2024 | LAMPS           | Layer-specific and Hierarchical Scheduling | arXiv      | [link](https://arxiv.org/pdf/2410.18248) | -                                      |
+| Year | Title           | Type                                       | Venue      | Paper                                    | code                                      |
+| ---- | --------------- | ------------------------------------------ | ---------- | ---------------------------------------- | ----------------------------------------- |
+| 2024 | LayerKV         | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.00428) | [Link](https://github.com/antgroup/glake) |
+| 2024 | CachedAttention | Layer-specific and Hierarchical Scheduling | USENIX ATC | [Link](https://arxiv.org/pdf/2403.19708) |                                           |
+| 2024 | ALISA           | Layer-specific and Hierarchical Scheduling | ISCA       | [Link](https://arxiv.org/pdf/2403.17312) |                                           |
+| 2024 | LAMPS           | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.18248) |                                           |
 
 ## Hardware-aware Design
 
 ### Single/Multi-GPU Design
 
-| Year | Title              | Type                    | Venue | Paper | code |
-| ---- | ------------------ | ----------------------- | ----- | ----- | ---- |
-| 2024 | HydraGen           | Single/Multi-GPU Design |       |       |      |
-| 2024 | DeFT               | Single/Multi-GPU Design |       |       |      |
-| 2023 | vLLM               | Single/Multi-GPU Design |       |       |      |
-| 2022 | ORCA               | Single/Multi-GPU Design |       |       |      |
-| 2024 | DistServe          | Single/Multi-GPU Design |       |       |      |
-| 2024 | Multi-Bin Batching | Single/Multi-GPU Design |       |       |      |
-| 2024 | Tree Attention     | Single/Multi-GPU Design |       |       |      |
+| Year | Title                                                        | Type                    | Venue | Paper                                                        | code                                                    |
+| ---- | ------------------------------------------------------------ | ----------------------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------- |
+| 2024 | Hydragen: High-Throughput LLM Inference with Shared Prefixes | Single/Multi-GPU Design | arXiv | [Link](https://arxiv.org/pdf/2402.05099)                     | [Link](https://github.com/ScalingIntelligence/hydragen) |
+| 2024 | DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference | Single/Multi-GPU Design | arXiv | [Link](https://arxiv.org/pdf/2404.00242)                     |                                                         |
+| 2024 | DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving | Single/Multi-GPU Design | OSDI  | [Link](https://www.usenix.org/system/files/osdi24-zhong-yinmin.pdf) | [Link](https://github.com/LLMServe/DistServe)           |
+| 2024 | Multi-Bin Batching for Increasing LLM Inference Throughput   | Single/Multi-GPU Design | arXiv | [Link](https://openreview.net/pdf?id=WVmarX0RNd)             |                                                         |
+| 2024 | Tree Attention: Topology-aware Decoding for Long-Context Attention on GPU clusters | Single/Multi-GPU Design | arXiv | [Link](https://arxiv.org/pdf/2408.04093)                     | [Link](https://github.com/Zyphra/tree_attention)        |
+| 2023 | Efficient Memory Management for Large Language Model Serving with PagedAttention | Single/Multi-GPU Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180)                     | [Link](https://github.com/vllm-project/vllm)            |
+| 2022 | Orca: A Distributed Serving System for Transformer-Based Generative Models | Single/Multi-GPU Design | OSDI  | [Link](https://www.usenix.org/system/files/osdi22-yu.pdf)    |                                                         |
 
 ### I/O-based Design
 
-| Year | Title                | Type             | Venue | Paper | code |
-| ---- | -------------------- | ---------------- | ----- | ----- | ---- |
-| 2022 | FlashAttention       | I/O-based Design |       |       |      |
-| 2024 | Bifurcated Attention | I/O-based Design |       |       |      |
-| 2024 | PartKVRec            | I/O-based Design |       |       |      |
-| 2024 | HCache               | I/O-based Design |       |       |      |
-| 2024 | Cake                 | I/O-based Design |       |       |      |
-| 2024 | FastSwitch           | I/O-based Design |       |       |      |
+| Year | Title                                                        | Type             | Venue   | Paper                                                        | code                                                         |
+| ---- | ------------------------------------------------------------ | ---------------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 2024 | Bifurcated Attention: Accelerating Massively Parallel Decoding with Shared Prefixes in LLMs | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2403.08845)                     | [Link](https://github.com/bifurcated-attn-icml-2024/gpt-fast-parallel-sampling) |
+| 2024 | Efficient LLM Inference with I/O-Aware Partial KV Cache Recomputation | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2411.17089)                     |                                                              |
+| 2024 | Fast State Restoration in LLM Serving with HCache            | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2410.05004)                     |                                                              |
+| 2024 | Compute Or Load KV Cache? Why Not Both?                      | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2410.03065)                     |                                                              |
+| 2024 | FastSwitch: Optimizing Context Switching Efficiency in Fairness-aware Large Language Model Serving | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2411.18424)                     |                                                              |
+| 2022 | FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness | I/O-based Design | NeurIPS | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf) | [Link](https://github.com/Dao-AILab/flash-attention)         |
 
 ### Heterogeneous Design
 
-| Year | Title      | Type                 | Venue | Paper | code |
-| ---- | ---------- | -------------------- | ----- | ----- | ---- |
-| 2024 | NEO        | Heterogeneous Design |       |       |      |
-| 2024 | FastDecode | Heterogeneous Design |       |       |      |
-| 2024 | FlexInfer  | Heterogeneous Design |       |       |      |
-| 2024 | InfiniGen  | Heterogeneous Design |       |       |      |
-| 2023 | Pensieve   | Heterogeneous Design |       |       |      |
-| 2024 | FastServe  | Heterogeneous Design |       |       |      |
-| 2024 | PartKVRec  | Heterogeneous Design |       |       |      |
+| Year | Title                                                        | Type                 | Venue | Paper                                    | code |
+| ---- | ------------------------------------------------------------ | -------------------- | ----- | ---------------------------------------- | ---- |
+| 2024 | NEO: Saving GPU Memory Crisis with CPU Offloading for Online LLM Inference | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2411.01142) |      |
+| 2024 | FASTDECODE: High-Throughput GPU-Efficient LLM Serving using Heterogeneous Pipelines | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2403.11421) |      |
+| 2024 | vTensor: Flexible Virtual Tensor Management for Efficient LLM Serving | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2407.15309) |      |
+| 2024 | InfiniGen: Efficient Generative Inference of Large Language Models with Dynamic KV Cache Management | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2406.19707) |      |
+| 2024 | Fast Distributed Inference Serving for Large Language Models | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2305.05920) |      |
+| 2024 | Efficient LLM Inference with I/O-Aware Partial KV Cache Recomputation | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2411.17089) |      |
+| 2023 | Stateful Large Language Model Serving with Pensieve          | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2312.05516) |      |
 
 ### SSD-based Design
 
-| Year | Title     | Type             | Venue | Paper | code |
-| ---- | --------- | ---------------- | ----- | ----- | ---- |
-| 2023 | FlexGen   | SSD-based Design |       |       |      |
-| 2024 | InstInfer | SSD-based Design |       |       |      |
+| Year | Title                                                        | Type             | Venue | Paper                                                        | code                                              |
+| ---- | ------------------------------------------------------------ | ---------------- | ----- | ------------------------------------------------------------ | ------------------------------------------------- |
+| 2024 | InstInfer: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference | SSD-based Design | arXiv | [Link](https://arxiv.org/pdf/2409.04992)                     |                                                   |
+| 2023 | FlexGen: High-Throughput Generative Inference of Large Language Models | SSD-based Design | ICML  | [Link](https://proceedings.mlr.press/v202/sheng23a/sheng23a.pdf) | [Link](https://github.com/FMInference/FlexLLMGen) |
 
 ---
 
