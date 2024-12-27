@@ -47,8 +47,6 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
     - [Heterogeneous Design](#heterogeneous-design)
     - [SSD-based Design](#ssd-based-design)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
-  - [Text Datasets](#text-datasets)
-  - [Multi-modal Datasets](#multi-modal-datasets)
 
 ---
 
@@ -56,7 +54,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## KV Cache Selection
 
-### Static KV Cache Selection
+### Static KV Cache Selection ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                   | Type                      | Venue   | Paper                                 | code                                          |
 | ---- | ----------------------------------------------------------------------- | ------------------------- | ------- | ------------------------------------- | --------------------------------------------- |
@@ -64,7 +62,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | SnapKV: LLM Knows What You are Looking for Before Generation            | Static KV Cache Selection | NeurIPS | [Link](https://arxiv.org/pdf/2404.14469) | [Link](https://github.com/FasterDecoding/SnapKV) ![](https://img.shields.io/github/stars/FasterDecoding/SnapKV.svg?style=social) |
 | 2024 | In-context KV-Cache Eviction for LLMs via Attention-Gate                | Static KV Cache Selection | arXiv   | [Link](https://arxiv.org/pdf/2410.12876) |                                               |
 
-### Dynamic Selection with Permanent Eviction
+### Dynamic Selection with Permanent Eviction ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                                       | Type                                      | Venue   | Paper                                 | code                                                                       |
 | ---- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------- | ------------------------------------- | -------------------------------------------------------------------------- |
@@ -74,7 +72,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2023 | H2O: heavy-hitter oracle for efficient generative inference of large language models                        | Dynamic Selection with Permanent Eviction | NeurIPS | [Link](https://arxiv.org/pdf/2306.14048) | [Link](https://github.com/FMInference/H2O) ![](https://img.shields.io/github/stars/FMInference/H2O.svg?style=social) |
 | 2023 | Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time | Dynamic Selection with Permanent Eviction | NeurIPS | [Link](https://arxiv.org/pdf/2305.17118) |                                                                            |
 
-### Dynamic Selection without Permanent Eviction
+### Dynamic Selection without Permanent Eviction ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                      | Type                                         | Venue | Paper                                 | code                                                   |
 | ---- | ------------------------------------------------------------------------------------------ | -------------------------------------------- | ----- | ------------------------------------- | ------------------------------------------------------ |
@@ -87,7 +85,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## KV Cache Budget Allocation
 
-### Layer-wise Budget Allocation
+### Layer-wise Budget Allocation ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                                        | Type                         | Venue     | Paper                                 | code                                              |
 | ---- | ------------------------------------------------------------------------------------------------------------ | ---------------------------- | --------- | ------------------------------------- | ------------------------------------------------- |
@@ -97,7 +95,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | PrefixKV: Adaptive Prefix KV Cache is What Vision Instruction-Following Models Need for Efficient Generation | Layer-wise Budget Allocation | arXiv     | [Link](https://arxiv.org/pdf/2412.03409) | [Link](https://github.com/THU-MIG/PrefixKV) ![](https://img.shields.io/github/stars/THU-MIG/PrefixKV.svg?style=social) |
 | 2024 | SimLayerKV: A Simple Framework for Layer-Level KV Cache Reduction                                            | Layer-wise Budget Allocation | arXiv     | [Link](https://arxiv.org/pdf/2410.13846) | [Link](https://github.com/sail-sg/SimLayerKV) ![](https://img.shields.io/github/stars/sail-sg/SimLayerKV.svg?style=social) |
 
-### Head-wise Budget Allocation
+### Head-wise Budget Allocation ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                                  | Type                        | Venue     | Paper                                                                       | code                                              |
 | ---- | ------------------------------------------------------------------------------------------------------ | --------------------------- | --------- | --------------------------------------------------------------------------- | ------------------------------------------------- |
@@ -110,7 +108,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## KV Cache Merging
 
-### Intra-layer Merging
+### Intra-layer Merging ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                              | Type                | Venue | Paper                                                  | code                                                |
 | ---- | -------------------------------------------------------------------------------------------------- | ------------------- | ----- | ------------------------------------------------------ | --------------------------------------------------- |
@@ -124,7 +122,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | Model Tells You Where to Merge: Adaptive KV Cache Merging for LLMs on Long-Context Tasks           | Intra-layer Merging | arXiv | [Link](https://arxiv.org/pdf/2407.08454)                  |                                                     |
 | 2024 | CHAI: Clustered Head Attention for Efficient LLM Inference                                         | Intra-layer Merging | arXiv | [Link](https://arxiv.org/pdf/2403.08058)                  |                                                     |
 
-### Cross-layer Merging
+### Cross-layer Merging ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                        | Type                | Venue | Paper                                 | code                                          |
 | ---- | ---------------------------------------------------------------------------- | ------------------- | ----- | ------------------------------------- | --------------------------------------------- |
@@ -133,7 +131,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## KV Cache Quantization
 
-### Fixed-precision Quantization
+### Fixed-precision Quantization ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                       | Type                         | Venue | Paper                                                 | code                                           |
 | ---- | ------------------------------------------------------------------------------------------- | ---------------------------- | ----- | ----------------------------------------------------- | ---------------------------------------------- |
@@ -142,7 +140,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2023 | FlexGen: High-Throughput Generative Inference of Large Language Models with a Single GPU    | Fixed-precision Quantization | ICML  | [Link](https://proceedings.mlr.press/v202/sheng23a.html) | [Link](https://github.com/FMInference/FlexLLMGen) ![](https://img.shields.io/github/stars/FMInference/FlexLLMGen.svg?style=social) |
 | 2022 | ZeroQuant: Efficient and Affordable Post-Training Quantization for Large-Scale Transformers | Fixed-precision Quantization | NIPS  | [Link](https://arxiv.org/pdf/2206.01861)                 | [Link](https://github.com/microsoft/DeepSpeed) ![](https://img.shields.io/github/stars/microsoft/DeepSpeed.svg?style=social) |
 
-### Mixed-precision Quantization
+### Mixed-precision Quantization ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                                 | Type                         | Venue | Paper                                 | code                                          |
 | ---- | ----------------------------------------------------------------------------------------------------- | ---------------------------- | ----- | ------------------------------------- | --------------------------------------------- |
@@ -158,7 +156,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | PrefixQuant: Static Quantization Beats Dynamic through Prefixed Outliers in LLMs                      | Mixed-precision Quantization | arXiv | [Link](https://arxiv.org/pdf/2410.05265) | [Link](https://github.com/ChenMnZ/PrefixQuant) ![](https://img.shields.io/github/stars/ChenMnZ/PrefixQuant.svg?style=social) |
 | 2024 | MiniKV: Pushing the Limits of LLM Inference via 2-Bit Layer-Discriminative KV Cache                   | Mixed-precision Quantization | arXiv | [Link](https://arxiv.org/pdf/2411.18077) |                                               |
 
-### Outlier Redistribution
+### Outlier Redistribution ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                                               | Type                   | Venue   | Paper                                                                                                                      | code                                                        |
 | ---- | ------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -177,7 +175,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## KV Cache Low-rank Decomposition
 
-### Singular Value Decomposition
+### Singular Value Decomposition ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                       | Type                         | Venue | Paper                                 | code                                                       |
 | ---- | ------------------------------------------------------------------------------------------- | ---------------------------- | ----- | ------------------------------------- | ---------------------------------------------------------- |
@@ -188,13 +186,13 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference                | Singular Value Decomposition | arXiv | [Link](https://arxiv.org/pdf/2410.21465) | [Link](https://github.com/bytedance/ShadowKV) ![](https://img.shields.io/github/stars/bytedance/ShadowKV.svg?style=social) |
 | 2024 | Palu: Compressing KV-Cache with Low-Rank Projection                                         | Singular Value Decomposition | arXiv | [Link](https://arxiv.org/pdf/2407.21118) | [Link](https://github.com/shadowpa0327/Palu) ![](https://img.shields.io/github/stars/shadowpa0327/Palu.svg?style=social) |
 
-### Tensor Decomposition
+### Tensor Decomposition ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                       | Type                 | Venue | Paper                                 | code                                           |
 | ---- | ------------------------------------------------------------------------------------------- | -------------------- | ----- | ------------------------------------- | ---------------------------------------------- |
 | 2024 | Unlocking Data-free Low-bit Quantization with Matrix Decomposition for KV Cache Compression | Tensor Decomposition | ACL   | [Link](https://arxiv.org/pdf/2405.12591) | [Link](https://github.com/lpyhdzx/DecoQuant_code) ![](https://img.shields.io/github/stars/lpyhdzx/DecoQuant_code.svg?style=social) |
 
-### Learned Low-rank Approximation
+### Learned Low-rank Approximation ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                             | Type                           | Venue | Paper                                 | code                                  |
 | ---- | ------------------------------------------------------------------------------------------------- | ------------------------------ | ----- | ------------------------------------- | ------------------------------------- |
@@ -207,7 +205,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Intra later
 
-### Grouped Attention
+### Grouped Attention ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title        | Type              | Venue | Paper | code |
 | ---- | ------------ | ----------------- | ----- | ----- | ---- |
@@ -219,14 +217,14 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | KDGQA        | Grouped Attention |       |       |      |
 | 2023 | GQKVA        | Grouped Attention |       |       |      |
 
-### Compression
+### Compression ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title        | Type        | Venue | Paper | code |
 | ---- | ------------ | ----------- | ----- | ----- | ---- |
 | 2024 | MLA          | Compression |       |       |      |
 | 2024 | MatryoshkaKV | Compression |       |       |      |
 
-### Extended Mechanism
+### Extended Mechanism ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title            | Type               | Venue | Paper | code |
 | ---- | ---------------- | ------------------ | ----- | ----- | ---- |
@@ -235,7 +233,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Cross Layer
 
-### Cache Sharing
+### Cache Sharing ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title     | Type          | Venue | Paper | code |
 | ---- | --------- | ------------- | ----- | ----- | ---- |
@@ -248,14 +246,14 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | LISA      | Cache Sharing |       |       |      |
 | 2024 | SVFormer  | Cache Sharing |       |       |      |
 
-### Compression
+### Compression ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title | Type        | Venue | Paper | code |
 | ---- | ----- | ----------- | ----- | ----- | ---- |
 | 2024 | YOCO  | Compression |       |       |      |
 | 2024 | CLLA  | Compression |       |       |      |
 
-### Augmented Architectures
+### Augmented Architectures ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title             | Type                    | Venue | Paper | code |
 | ---- | ----------------- | ----------------------- | ----- | ----- | ---- |
@@ -265,7 +263,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Non-transformer Architecture
 
-### New Architecture
+### New Architecture ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title  | Type             | Venue | Paper | code |
 | ---- | ------ | ---------------- | ----- | ----- | ---- |
@@ -274,7 +272,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2023 | RetNet | New Architecture |       |       |      |
 | 2024 | MCSD   | New Architecture |       |       |      |
 
-### Hybrid Architecture
+### Hybrid Architecture ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title       | Type                | Venue | Paper | code |
 | ---- | ----------- | ------------------- | ----- | ----- | ---- |
@@ -288,7 +286,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Memory Management
 
-### Architectural Design
+### Architectural Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title   | Type                 | Venue | Paper                                    | code                                         |
 | ---- | ------- | -------------------- | ----- | ---------------------------------------- | -------------------------------------------- |
@@ -296,7 +294,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | LeanKV  | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2412.03131) |                                              |
 | 2023 | vLLM    | Architectural Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180) | [Link](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) |
 
-### Prefix-aware Design
+### Prefix-aware Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title          | Type                | Venue | Paper                                    | code                                                 |
 | ---- | -------------- | ------------------- | ----- | ---------------------------------------- | ---------------------------------------------------- |
@@ -305,21 +303,21 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Scheduling
 
-### Prefix-aware Scheduling
+### Prefix-aware Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title          | Type                    | Venue   | Paper                                    | code                                          |
 | ---- | -------------- | ----------------------- | ------- | ---------------------------------------- | --------------------------------------------- |
 | 2024 | BatchLLM       | Prefix-aware Scheduling | arXiv   | [Link](https://arxiv.org/pdf/2412.03594) |                                               |
 | 2024 | RadixAttention | Prefix-aware Scheduling | NeurIPS | [Link](https://arxiv.org/pdf/2312.07104) | [Link](https://github.com/sgl-project/sglang) ![](https://img.shields.io/github/stars/sgl-project/sglang.svg?style=social) |
 
-### Preemptive and Fairness-oriented Scheduling
+### Preemptive and Fairness-oriented Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title      | Type                                        | Venue | Paper                                    | code |
 | ---- | ---------- | ------------------------------------------- | ----- | ---------------------------------------- | ---- |
 | 2024 | FastServe  | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2305.05920) |      |
 | 2024 | FastSwitch | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2411.18424) |      |
 
-### Layer-specific and Hierarchical Scheduling
+### Layer-specific and Hierarchical Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title           | Type                                       | Venue      | Paper                                    | code                                      |
 | ---- | --------------- | ------------------------------------------ | ---------- | ---------------------------------------- | ----------------------------------------- |
@@ -330,7 +328,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ## Hardware-aware Design
 
-### Single/Multi-GPU Design
+### Single/Multi-GPU Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                        | Type                    | Venue | Paper                                                        | code                                                    |
 | ---- | ------------------------------------------------------------ | ----------------------- | ----- | ------------------------------------------------------------ | ------------------------------------------------------- |
@@ -342,7 +340,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2023 | Efficient Memory Management for Large Language Model Serving with PagedAttention | Single/Multi-GPU Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180)                     | [Link](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) |
 | 2022 | Orca: A Distributed Serving System for Transformer-Based Generative Models | Single/Multi-GPU Design | OSDI  | [Link](https://www.usenix.org/system/files/osdi22-yu.pdf)    |                                                         |
 
-### I/O-based Design
+### I/O-based Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                        | Type             | Venue   | Paper                                                        | code                                                         |
 | ---- | ------------------------------------------------------------ | ---------------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -353,7 +351,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | FastSwitch: Optimizing Context Switching Efficiency in Fairness-aware Large Language Model Serving | I/O-based Design | arXiv   | [Link](https://arxiv.org/pdf/2411.18424)                     |                                                              |
 | 2022 | FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness | I/O-based Design | NeurIPS | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf) | [Link](https://github.com/Dao-AILab/flash-attention) ![](https://img.shields.io/github/stars/Dao-AILab/flash-attention.svg?style=social) |
 
-### Heterogeneous Design
+### Heterogeneous Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                        | Type                 | Venue | Paper                                    | code |
 | ---- | ------------------------------------------------------------ | -------------------- | ----- | ---------------------------------------- | ---- |
@@ -365,7 +363,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 | 2024 | Efficient LLM Inference with I/O-Aware Partial KV Cache Recomputation | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2411.17089) |      |
 | 2023 | Stateful Large Language Model Serving with Pensieve          | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2312.05516) |      |
 
-### SSD-based Design
+### SSD-based Design ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                        | Type             | Venue | Paper                                                        | code                                              |
 | ---- | ------------------------------------------------------------ | ---------------- | ----- | ------------------------------------------------------------ | ------------------------------------------------- |
@@ -374,7 +372,7 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 ---
 
-# Datasets and Benchmarks
+# Datasets and Benchmarks ([To Top👆🏻](#awesome-kv-cache-management))
 
 Please refer to our paper for detailed information on this section.
 
