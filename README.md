@@ -376,16 +376,6 @@ This repo aims to record a survey on LLM acceleration based on KV Cache Manageme
 
 # Datasets and Benchmarks
 
-## Text Datasets
-
-| Year | Title | Type | Venue | Paper | code |
-| ---- | ----- | ---- | ----- | ----- | ---- |
-|      |       |      |       |       |      |
-
-## Multi-modal Datasets
-
-| Year | Title | Type | Venue | Paper | code |
-| ---- | ----- | ---- | ----- | ----- | ---- |
-|      |       |      |       |       |      |
+Please refer to our paper for detailed information on this section.
 
 ---
