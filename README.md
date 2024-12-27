@@ -1,6 +1,9 @@
 # Awesome-KV-Cache-Management
 
-This repo aims to record a survey on LLM acceleration based on KV Cache Management.
+This repository is dedicated to documenting KV Cache Management papers for LLM acceleration. The survey will be updated regularly.
+
+If you find this survey helpful for your work, please consider citing it [bib]. Also, if you would like to include your paper in this survey and repository, please feel free to open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
+
 
 - [Token-level Optimization](#token-level-optimization)
   - [KV Cache Selection](#kv-cache-selection)
