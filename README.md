@@ -26,16 +26,14 @@ If you find this survey helpful for your work, please consider citing it [bib]. 
     - [Tensor Decomposition (To Top👆🏻)](#tensor-decomposition-to-top)
     - [Learned Low-rank Approximation (To Top👆🏻)](#learned-low-rank-approximation-to-top)
 - [Model-level Optimization](#model-level-optimization)
-  - [Intra later](#intra-later)
-    - [Grouped Attention (To Top👆🏻)](#grouped-attention-to-top)
-    - [Compression (To Top👆🏻)](#compression-to-top)
-    - [Extended Mechanism (To Top👆🏻)](#extended-mechanism-to-top)
-  - [Cross Layer](#cross-layer)
-    - [Cache Sharing (To Top👆🏻)](#cache-sharing-to-top)
-    - [Compression (To Top👆🏻)](#compression-to-top-1)
+  - [Attention Grouping and Sharing](#attention-grouping-and-sharing)
+    - [Intra-Layer Grouping (To Top👆🏻)](#intra-layer-grouping-to-top)
+    - [Cross-Layer Sharing (To Top👆🏻)](#cross-layer-sharing-to-top)
+  - [Architecture Alteration](#architecture-alteration)
+    - [Enhanced Attention (To Top👆🏻)](#enhanced-attention-to-top)
     - [Augmented Architectures (To Top👆🏻)](#augmented-architectures-to-top)
   - [Non-transformer Architecture](#non-transformer-architecture)
-    - [New Architecture (To Top👆🏻)](#new-architecture-to-top)
+    - [Adaptive Sequence Processing Architecture (To Top👆🏻)](#adaptive-sequence-processing-architecture-to-top)
     - [Hybrid Architecture (To Top👆🏻)](#hybrid-architecture-to-top)
 - [System-level Optimization](#system-level-optimization)
   - [Memory Management](#memory-management)
@@ -131,7 +129,7 @@ If you find this survey helpful for your work, please consider citing it [bib]. 
 | Year | Title                                                                        | Type                | Venue | Paper                                 | code                                                                                                                        |
 | ---- | ---------------------------------------------------------------------------- | ------------------- | ----- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | 2024 | MiniCache: KV Cache Compression in Depth Dimension for Large Language Models | Cross-layer Merging | arXiv | [Link](https://arxiv.org/pdf/2405.14366) | [Link](https://github.com/AkideLiu/MiniCache) ![](https://img.shields.io/github/stars/AkideLiu/MiniCache.svg?style=social)       |
-| 2024 | KVSharer: Efficient Inference via Layer-Wise Dissimilar KV Cache Sharing     | Cross-layer Merging | arXiv | [Link](https://arxiv.org/pdf/2410.18517) | [Link](https://github.com/yangyifei729/KVSharer) ![](https://img.shields.io/github/stars/yangyifei729/KVSharer.svg?style=social) |
+| 2024 | KVSharer: Efficient Inference via Layer-Wise Dissimilar KV Cross-Layer Sharing     | Cross-layer Merging | arXiv | [Link](https://arxiv.org/pdf/2410.18517) | [Link](https://github.com/yangyifei729/KVSharer) ![](https://img.shields.io/github/stars/yangyifei729/KVSharer.svg?style=social) |
 
 ## KV Cache Quantization
 
@@ -207,83 +205,71 @@ If you find this survey helpful for your work, please consider citing it [bib]. 
 
 # Model-level Optimization
 
-## Intra later
+## Attention Grouping and Sharing
 
-### Grouped Attention ([To Top👆🏻](#awesome-kv-cache-management))
+### Intra-Layer Grouping ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title                                                                                | Type              | Venue | Paper                                 | code                                                           |
 | ---- | ------------------------------------------------------------------------------------ | ----------------- | ----- | ------------------------------------- | -------------------------------------------------------------- |
-| 2019 | Fast Transformer Decoding: One Write-Head is All You Need                            | Grouped Attention | arXiv | [Link](https://arxiv.org/pdf/1911.02150) |                                                                |
-| 2023 | GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints | Grouped Attention | EMNLP | [Link](https://arxiv.org/pdf/2305.13245) | [Link](https://github.com/fkodom/grouped-query-attention-pytorch) ![](https://img.shields.io/github/stars/fkodom/grouped-query-attention-pytorch.svg?style=social)|
-| 2024 | Optimised Grouped-Query Attention Mechanism for Transformers | Grouped Attention | ICML | [Link](https://openreview.net/pdf?id=13MMghY6Kh) |                                                                |
-| 2024 | Weighted Grouped Query Attention in Transformers | Grouped Attention | arXiv | [Link](https://arxiv.org/pdf/2407.10855) |                                                                |
-| 2024 | QCQA: Quality and Capacity-aware grouped Query Attention  | Grouped Attention | arXiv | [Link](https://arxiv.org/pdf/2406.10247) | [Non-official Link](https://github.com/vinayjoshi22/qcqa) ![](https://img.shields.io/github/stars/vinayjoshi22/qcqa.svg?style=social)|      |
-| 2024 | Beyond Uniform Query Distribution: Key-Driven Grouped Query Attention | Grouped Attention | arXiv | [Link](https://arxiv.org/pdf/2408.08454) | [Link](https://github.com/zohaib-khan5040/key-driven-gqa) ![](https://img.shields.io/github/stars/zohaib-khan5040/key-driven-gqa.svg?style=social)|
-| 2023 | GQKVA: Efficient Pre-training of Transformers by Grouping Queries, Keys, and Values | Grouped Attention | NeurIPS | [Link](https://arxiv.org/pdf/2311.03426) |                                                                |
+| 2019 | Fast Transformer Decoding: One Write-Head is All You Need                            | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/1911.02150) |                                                                |
+| 2023 | GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints | Intra-Layer Grouping | EMNLP | [Link](https://arxiv.org/pdf/2305.13245) | [Link](https://github.com/fkodom/grouped-query-attention-pytorch) ![](https://img.shields.io/github/stars/fkodom/grouped-query-attention-pytorch.svg?style=social)|
+| 2024 | Optimised Grouped-Query Attention Mechanism for Transformers | Intra-Layer Grouping | ICML | [Link](https://openreview.net/pdf?id=13MMghY6Kh) |                                                                |
+| 2024 | Weighted Grouped Query Attention in Transformers | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2407.10855) |                                                                |
+| 2024 | QCQA: Quality and Capacity-aware grouped Query Attention  | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2406.10247) | [Non-official Link](https://github.com/vinayjoshi22/qcqa) ![](https://img.shields.io/github/stars/vinayjoshi22/qcqa.svg?style=social)|      |
+| 2024 | Beyond Uniform Query Distribution: Key-Driven Grouped Query Attention | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2408.08454) | [Link](https://github.com/zohaib-khan5040/key-driven-gqa) ![](https://img.shields.io/github/stars/zohaib-khan5040/key-driven-gqa.svg?style=social)|
+| 2023 | GQKVA: Efficient Pre-training of Transformers by Grouping Queries, Keys, and Values | Intra-Layer Grouping | NeurIPS | [Link](https://arxiv.org/pdf/2311.03426) |                                                                |
 
-### Compression ([To Top👆🏻](#awesome-kv-cache-management))
-
-| Year | Title        | Type        | Venue | Paper | code |
-| ---- | ------------ | ----------- | ----- | ----- | ---- |
-| 2024 | MLA          | Compression |       |       |      |
-| 2024 | MatryoshkaKV | Compression |       |       |      |
-
-### Extended Mechanism ([To Top👆🏻](#awesome-kv-cache-management))
-
-| Year | Title            | Type               | Venue | Paper | code |
-| ---- | ---------------- | ------------------ | ----- | ----- | ---- |
-| 2022 | FLASH            | Extended Mechanism |       |       |      |
-| 2024 | Infini-Attention | Extended Mechanism |       |       |      |
-
-## Cross Layer
-
-### Cache Sharing ([To Top👆🏻](#awesome-kv-cache-management))
+### Cross-Layer Sharing ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title     | Type          | Venue | Paper | code |
 | ---- | --------- | ------------- | ----- | ----- | ---- |
-| 2024 | Reducing Transformer Key-Value Cache Size with Cross-Layer Attention | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2405.12981) | [Non-official Link](https://github.com/JerryYin777/Cross-Layer-Attention) ![](https://img.shields.io/github/stars/JerryYin777/Cross-Layer-Attention.svg?style=social) |
-| 2024 | Layer-Condensed KV Cache for Efficient Inference of Large Language Models | Cache Sharing | ACL | [Link](https://aclanthology.org/2024.acl-long.602.pdf) | [Link](https://github.LCKVcom/whyNLP/) ![](https://img.shields.io/github/stars/whyNLP/LCKV.svg?style=social) |
-| 2024 | Beyond KV Caching: Shared Attention for Efficient LLMs | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2407.12866) | [Link](https://github.com/metacarbon/shareAtt) ![](https://img.shields.io/github/stars/metacarbon/shareAtt?style=social) |
-| 2024 | MLKV: Multi-Layer Key-Value Heads for Memory Efficient Transformer Decoding | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2406.09297) | [Link](https://github.com/zaydzuhri/mlkv) ![](https://img.shields.io/github/stars/zaydzuhri/mlkv?style=social) |
-| 2024 | Cross-layer Attention Sharing for Large Language Models | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2408.01890) |      |
-| 2024 | A Systematic Study of Cross-Layer KV Sharing for Efficient LLM Inference | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.14442) |      |
-| 2024 | Lossless KV Cache Compression to 2% | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.15252) |      |
-| 2024 | DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion | Cache Sharing |  NeurIPS | [Link](https://arxiv.org/pdf/2406.06567) |      |
-| 2024 | Value Residual Learning For Alleviating Attention Concentration In Transformers | Cache Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.17897) | [Link](https://github.com/Zcchill/Value-Residual-Learning) ![](https://img.shields.io/github/stars/Zcchill/Value-Residual-Learning?style=social) |
+| 2024 | Reducing Transformer Key-Value Cache Size with Cross-Layer Attention | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2405.12981) | [Non-official Link](https://github.com/JerryYin777/Cross-Layer-Attention) ![](https://img.shields.io/github/stars/JerryYin777/Cross-Layer-Attention.svg?style=social) |
+| 2024 | Layer-Condensed KV Cache for Efficient Inference of Large Language Models | Cross-Layer Sharing | ACL | [Link](https://aclanthology.org/2024.acl-long.602.pdf) | [Link](https://github.LCKVcom/whyNLP/) ![](https://img.shields.io/github/stars/whyNLP/LCKV.svg?style=social) |
+| 2024 | Beyond KV Caching: Shared Attention for Efficient LLMs | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2407.12866) | [Link](https://github.com/metacarbon/shareAtt) ![](https://img.shields.io/github/stars/metacarbon/shareAtt?style=social) |
+| 2024 | MLKV: Multi-Layer Key-Value Heads for Memory Efficient Transformer Decoding | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2406.09297) | [Link](https://github.com/zaydzuhri/mlkv) ![](https://img.shields.io/github/stars/zaydzuhri/mlkv?style=social) |
+| 2024 | Cross-layer Attention Sharing for Large Language Models | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2408.01890) |      |
+| 2024 | A Systematic Study of Cross-Layer KV Sharing for Efficient LLM Inference | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.14442) |      |
+| 2024 | Lossless KV Cache Compression to 2% | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.15252) |      |
+| 2024 | DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion | Cross-Layer Sharing |  NeurIPS | [Link](https://arxiv.org/pdf/2406.06567) |      |
+| 2024 | Value Residual Learning For Alleviating Attention Concentration In Transformers | Cross-Layer Sharing | arXiv | [Link](https://arxiv.org/pdf/2410.17897) | [Link](https://github.com/Zcchill/Value-Residual-Learning) ![](https://img.shields.io/github/stars/Zcchill/Value-Residual-Learning?style=social) |
 
-### Compression ([To Top👆🏻](#awesome-kv-cache-management))
+## Architecture Alteration
+
+### Enhanced Attention ([To Top👆🏻](#awesome-kv-cache-management))
+
+| Year | Title        | Type        | Venue | Paper | code |
+| ---- | ------------ | ----------- | ----- | ----- | ---- |
+| 2024 | DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model | Enhanced Attention | arXiv | [Link](https://arxiv.org/pdf/2405.04434) | [Link](https://github.com/deepseek-ai/DeepSeek-V2) ![](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V2?style=social) |
+| 2022 | Transformer Quality in Linear Time | Enhanced Attention | ICML | [Link](https://proceedings.mlr.press/v162/hua22a/hua22a.pdf) |      |
+| 2024 | Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention | Enhanced Attention | arXiv | [Link](https://arxiv.org/pdf/2404.07143) |      |
+
+### Augmented Architecture ([To Top👆🏻](#awesome-kv-cache-management))
 
 | Year | Title | Type        | Venue | Paper | code |
 | ---- | ----- | ----------- | ----- | ----- | ---- |
-| 2024 | YOCO  | Compression |       |       |      |
-| 2024 | CLLA  | Compression |       |       |      |
-
-### Augmented Architectures ([To Top👆🏻](#awesome-kv-cache-management))
-
-| Year | Title             | Type                    | Venue | Paper | code |
-| ---- | ----------------- | ----------------------- | ----- | ----- | ---- |
-| 2024 | CEPE              | Augmented Architectures |       |       |      |
-| 2024 | XC-Cache          | Augmented Architectures |       |       |      |
-| 2024 | Block Transformer | Augmented Architectures |       |       |      |
+| 2024 | You Only Cache Once: Decoder-Decoder Architectures for Language Models | Augmented Architecture | arXiv | [Link](https://arxiv.org/pdf/2405.05254) | [Link](https://github.com/microsoft/unilm/tree/master/YOCO) ![](https://img.shields.io/github/stars/microsoft/unilm?style=social) |
+| 2024 | Long-Context Language Modeling with Parallel Context Encoding | Augmented Architectures | ACL | [Link](https://aclanthology.org/2024.acl-long.142.pdf) | [Link](https://github.com/princeton-nlp/CEPE) ![](https://img.shields.io/github/stars/princeton-nlp/CEPE?style=social) |
+| 2024 | XC-CACHE: Cross-Attending to Cached Context for Efficient LLM Inference | Augmented Architectures | Findings | [Link](https://aclanthology.org/2024.findings-emnlp.896.pdf) |      |
+| 2024 | Block Transformer: Global-to-Local Language Modeling for Fast Inference | Augmented Architectures | arXiv | [Link](https://arxiv.org/pdf/2406.02657) | [Link](https://github.com/itsnamgyu/block-transformer) ![](https://img.shields.io/github/stars/itsnamgyu/block-transformer?style=social) |
 
 ## Non-transformer Architecture
 
-### New Architecture ([To Top👆🏻](#awesome-kv-cache-management))
+### Adaptive Sequence Processing Architecture ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title  | Type             | Venue | Paper | code |
-| ---- | ------ | ---------------- | ----- | ----- | ---- |
-| 2023 | RWKV   | New Architecture |       |       |      |
-| 2024 | Mamba  | New Architecture |       |       |      |
-| 2023 | RetNet | New Architecture |       |       |      |
-| 2024 | MCSD   | New Architecture |       |       |      |
+| Year | Title                                                        | Type                                      | Venue    | Paper                                    | code                                                         |
+| ---- | ------------------------------------------------------------ | ----------------------------------------- | -------- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2023 | RWKV: Reinventing RNNs for the Transformer Era               | Adaptive Sequence Processing Architecture | Findings | [Link](https://arxiv.org/pdf/2305.13048) | [Link](https://github.com/BlinkDL/RWKV-LM) ![](https://img.shields.io/github/stars/BlinkDL/RWKV-LM?style=social) |
+| 2024 | Mamba: Linear-Time Sequence Modeling with Selective State Spaces | Adaptive Sequence Processing Architecture | arXiv    | [Link](https://arxiv.org/pdf/2312.00752) | [Link](https://github.com/state-spaces/mamba) ![](https://img.shields.io/github/stars/state-spaces/mamba?style=social) |
+| 2023 | Retentive Network: A Successor to Transformer for Large Language Models | Adaptive Sequence Processing Architecture | arXiv    | [Link](https://arxiv.org/pdf/2307.08621) | [Link](https://github.com/microsoft/unilm/tree/master/retnet) ![](https://img.shields.io/github/stars/microsoft/unilm?style=social) |
+| 2024 | MCSD: An Efficient Language Model with Diverse Fusion        | Adaptive Sequence Processing Architecture | arXiv    | [Link](https://arxiv.org/pdf/2406.12230) |                                                              |
 
 ### Hybrid Architecture ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title       | Type                | Venue | Paper | code |
-| ---- | ----------- | ------------------- | ----- | ----- | ---- |
-| 2024 | MixCon      | Hybrid Architecture |       |       |      |
-| 2024 | GoldFinch   | Hybrid Architecture |       |       |      |
-| 2024 | RecurFormer | Hybrid Architecture |       |       |      |
+| Year | Title                                                        | Type                | Venue     | Paper                                                        | code                                                |
+| ---- | ------------------------------------------------------------ | ------------------- | --------- | ------------------------------------------------------------ | --------------------------------------------------- |
+| 2024 | MixCon: A Hybrid Architecture for Efficient and Adaptive Sequence Modeling | Hybrid Architecture | IOS Press | [Link](https://zhouchenlin.github.io/Publications/2024-ECAI-MixCon.pdf) |                                                     |
+| 2024 | GoldFinch: High Performance RWKV/Transformer Hybrid with Linear Pre-Fill and Extreme KV-Cache Compression | Hybrid Architecture | arXiv     | [Link](https://arxiv.org/pdf/2407.12077)                     | [Link](https://github.com/recursal/GoldFinch-paper) ![](https://img.shields.io/github/stars/recursal/GoldFinch-paper?style=social) |
+| 2024 | RecurFormer: Not All Transformer Heads Need Self-Attention   | Hybrid Architecture | arXiv     | [Link](https://arxiv.org/pdf/2410.12850)                     |                                                     |
 
 ---
 
@@ -293,43 +279,43 @@ If you find this survey helpful for your work, please consider citing it [bib]. 
 
 ### Architectural Design ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title   | Type                 | Venue | Paper                                 | code                                                                                                                |
-| ---- | ------- | -------------------- | ----- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| 2024 | vTensor | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2407.15309) | [Link](https://github.com/antgroup/glake) ![](https://img.shields.io/github/stars/antgroup/glake.svg?style=social)       |
-| 2024 | LeanKV  | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2412.03131) |                                                                                                                     |
-| 2023 | vLLM    | Architectural Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180) | [Link](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) |
+| Year | Title                                                        | Type                 | Venue | Paper                                    | code                                                         |
+| ---- | ------------------------------------------------------------ | -------------------- | ----- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2024 | vTensor: Flexible Virtual Tensor Management for Efficient LLM Serving | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2407.15309) | [Link](https://github.com/antgroup/glake) ![](https://img.shields.io/github/stars/antgroup/glake.svg?style=social) |
+| 2024 | Unifying KV Cache Compression for Large Language Models with LeanKV | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2412.03131) |                                                              |
+| 2023 | Efficient Memory Management for Large Language Model Serving with PagedAttention | Architectural Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180) | [Link](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) |
 
 ### Prefix-aware Design ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title          | Type                | Venue | Paper                                 | code                                                                                                                                |
-| ---- | -------------- | ------------------- | ----- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 2024 | ChunkAttention | Prefix-aware Design | ACL   | [Link](https://arxiv.org/pdf/2402.15220) | [Link](https://github.com/microsoft/chunk-attention) ![](https://img.shields.io/github/stars/microsoft/chunk-attention.svg?style=social) |
-| 2024 | MemServe       | Prefix-aware Design | arXiv | [Link](https://arxiv.org/pdf/2406.17565) |                                                                                                                                     |
+| Year | Title                                                        | Type                | Venue | Paper                                    | code                                                         |
+| ---- | ------------------------------------------------------------ | ------------------- | ----- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2024 | ChunkAttention: Efficient Self-Attention with Prefix-Aware KV Cache and Two-Phase Partition | Prefix-aware Design | ACL   | [Link](https://arxiv.org/pdf/2402.15220) | [Link](https://github.com/microsoft/chunk-attention) ![](https://img.shields.io/github/stars/microsoft/chunk-attention.svg?style=social) |
+| 2024 | MemServe:FlexibleMemPoolforBuilding DisaggregatedLLMServingwithCaching | Prefix-aware Design | arXiv | [Link](https://arxiv.org/pdf/2406.17565) |                                                              |
 
 ## Scheduling
 
 ### Prefix-aware Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title          | Type                    | Venue   | Paper                                 | code                                                                                                                  |
-| ---- | -------------- | ----------------------- | ------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| 2024 | BatchLLM       | Prefix-aware Scheduling | arXiv   | [Link](https://arxiv.org/pdf/2412.03594) |                                                                                                                       |
-| 2024 | RadixAttention | Prefix-aware Scheduling | NeurIPS | [Link](https://arxiv.org/pdf/2312.07104) | [Link](https://github.com/sgl-project/sglang) ![](https://img.shields.io/github/stars/sgl-project/sglang.svg?style=social) |
+| Year | Title                                                        | Type                    | Venue   | Paper                                    | code                                                         |
+| ---- | ------------------------------------------------------------ | ----------------------- | ------- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2024 | BatchLLM: Optimizing Large Batched LLM Inference with Global Prefix Sharing and Throughput-oriented Token Batching | Prefix-aware Scheduling | arXiv   | [Link](https://arxiv.org/pdf/2412.03594) |                                                              |
+| 2024 | SGLang: Efficient Execution of Structured Language Model Programs | Prefix-aware Scheduling | NeurIPS | [Link](https://arxiv.org/pdf/2312.07104) | [Link](https://github.com/sgl-project/sglang) ![](https://img.shields.io/github/stars/sgl-project/sglang.svg?style=social) |
 
 ### Preemptive and Fairness-oriented Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title      | Type                                        | Venue | Paper                                 | code |
-| ---- | ---------- | ------------------------------------------- | ----- | ------------------------------------- | ---- |
-| 2024 | FastServe  | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2305.05920) |      |
-| 2024 | FastSwitch | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2411.18424) |      |
+| Year | Title                                                        | Type                                        | Venue | Paper                                    | code |
+| ---- | ------------------------------------------------------------ | ------------------------------------------- | ----- | ---------------------------------------- | ---- |
+| 2024 | Fast Distributed Inference Serving for Large Language Models | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2305.05920) |      |
+| 2024 | FASTSWITCH: OPTIMIZING CONTEXT SWITCHING EFFICIENCY IN FAIRNESS-AWARE LARGE LANGUAGE MODEL SERVING | Preemptive and Fairness-oriented Scheduling | arXiv | [Link](https://arxiv.org/pdf/2411.18424) |      |
 
 ### Layer-specific and Hierarchical Scheduling ([To Top👆🏻](#awesome-kv-cache-management))
 
-| Year | Title           | Type                                       | Venue      | Paper                                 | code                                                                                                          |
-| ---- | --------------- | ------------------------------------------ | ---------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| 2024 | LayerKV         | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.00428) | [Link](https://github.com/antgroup/glake) ![](https://img.shields.io/github/stars/antgroup/glake.svg?style=social) |
-| 2024 | CachedAttention | Layer-specific and Hierarchical Scheduling | USENIX ATC | [Link](https://arxiv.org/pdf/2403.19708) |                                                                                                               |
-| 2024 | ALISA           | Layer-specific and Hierarchical Scheduling | ISCA       | [Link](https://arxiv.org/pdf/2403.17312) |                                                                                                               |
-| 2024 | LAMPS           | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.18248) |                                                                                                               |
+| Year | Title                                                        | Type                                       | Venue      | Paper                                    | code                                                         |
+| ---- | ------------------------------------------------------------ | ------------------------------------------ | ---------- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2024 | LayerKV: Optimizing Large Language Model Serving with Layer-wise KV Cache Management | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.00428) | [Link](https://github.com/antgroup/glake) ![](https://img.shields.io/github/stars/antgroup/glake.svg?style=social) |
+| 2024 | Cost-Efficient Large Language Model Serving for Multi-turn Conversations with CachedAttention | Layer-specific and Hierarchical Scheduling | USENIX ATC | [Link](https://arxiv.org/pdf/2403.19708) |                                                              |
+| 2024 | ALISA: Accelerating Large Language Model Inference via Sparsity-Aware KV Caching | Layer-specific and Hierarchical Scheduling | ISCA       | [Link](https://arxiv.org/pdf/2403.17312) |                                                              |
+| 2024 | Fast Inference for Augmented Large Language Models           | Layer-specific and Hierarchical Scheduling | arXiv      | [Link](https://arxiv.org/pdf/2410.18248) |                                                              |
 
 ## Hardware-aware Design
 
