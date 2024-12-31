@@ -1,9 +1,29 @@
 # Awesome-KV-Cache-Management
 
-This repository is dedicated to documenting KV Cache Management papers for LLM acceleration. The survey will be updated regularly.
 
-If you find this survey helpful for your work, please consider citing it [bib]. Also, if you would like to include your paper in this survey and repository, please feel free to open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
 
+
+
+## A Survey on Large Language Model Acceleration based on KV Cache Management [[PDF]](https://arxiv.org/pdf/2412.19442) 
+
+> *Haoyang Li <sup>1</sup>, Yiming Li <sup>2</sup>, Anxin Tian <sup>2</sup>, Tinahao Tang <sup>2</sup>, Zhanchao Xu <sup>4</sup>, Xuejia Chen <sup>4</sup>, Nicole Hu <sup>3</sup>, Wei Dong <sup>5</sup>, Qing Li <sup>1</sup>, Lei Chen <sup>2</sup>*
+
+> *<sup>1</sup>Hong Kong Polytechnic University, <sup>2</sup>Hong Kong University of Science and Technology, <sup>3</sup>The Chinese University of Hong Kong, <sup>4</sup>Huazhong University of Science and Technology, <sup>5</sup>Nanyang Technological University.*
+
+- This repository is dedicated to recording KV Cache Management papers for LLM acceleration. The survey will be updated regularly.
+
+- If you find this survey helpful for your work, please consider citing it.
+```
+  @article{li2024surveylargelanguagemodel,
+      title={A Survey on Large Language Model Acceleration based on KV Cache Management}, 
+      author={Haoyang Li and Yiming Li and Anxin Tian and Tianhao Tang and Zhanchao Xu and Xuejia Chen and Nicole Hu and Wei Dong and Qing Li and Lei Chen},
+      journal={arXiv preprint arXiv:2412.19442},
+      year={2024}
+  }
+  ```
+- If you would like to include your paper in this survey and repository, please feel free to open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
+
+## Toxonomy and Papers
 
 - [Awesome-KV-Cache-Management](#awesome-kv-cache-management)
 - [Token-level Optimization](#token-level-optimization)
