@@ -21,7 +21,7 @@
       year={2024}
   }
   ```
-- If you would like to include your paper in this survey and repository, please feel free to open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
+- If you would like to include your paper or  any modifications in this survey and repository, please feel free to send email to (haoyang-comp.li@polyu.edu.hk) or open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
 
 ## Toxonomy and Papers
 
