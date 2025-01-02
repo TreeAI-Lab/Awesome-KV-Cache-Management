@@ -51,7 +51,7 @@
     - [Cross-Layer Sharing (To Top👆🏻)](#cross-layer-sharing-to-top)
   - [Architecture Alteration](#architecture-alteration)
     - [Enhanced Attention (To Top👆🏻)](#enhanced-attention-to-top)
-    - [Augmented Architectures (To Top👆🏻)](#augmented-architectures-to-top)
+    - [Augmented Architecture (To Top👆🏻)](#augmented-architecture-to-top)
   - [Non-transformer Architecture](#non-transformer-architecture)
     - [Adaptive Sequence Processing Architecture (To Top👆🏻)](#adaptive-sequence-processing-architecture-to-top)
     - [Hybrid Architecture (To Top👆🏻)](#hybrid-architecture-to-top)
