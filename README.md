@@ -1,6 +1,10 @@
 # Awesome-KV-Cache-Management
 
 
+### News
+
+**📢 New Benchmark Released (2025-02-18):** *"Exposing Numeracy Gaps: A Benchmark to Evaluate Fundamental Numerical Abilities in Large Language Models [[PDF]](https://arxiv.org/pdf/2502.11075)"* — proposing a long NumericBench to assess LLMs' numerical reasoning! 🚀
+
 
 
 
@@ -10,9 +14,7 @@
 
 > *<sup>1</sup>Hong Kong Polytechnic University, <sup>2</sup>Hong Kong University of Science and Technology, <sup>3</sup>The Chinese University of Hong Kong, <sup>4</sup>Huazhong University of Science and Technology, <sup>5</sup>Nanyang Technological University.*
 
-- This repository is dedicated to recording KV Cache Management papers for LLM acceleration. The survey will be updated regularly.
-
-- If you find this survey helpful for your work, please consider citing it.
+- This repository is dedicated to recording KV Cache Management papers for LLM acceleration. The survey will be updated regularly. If you find this survey helpful for your work, please consider citing it.
 ```
   @article{li2024surveylargelanguagemodel,
       title={A Survey on Large Language Model Acceleration based on KV Cache Management}, 
@@ -22,6 +24,7 @@
   }
   ```
 - If you would like to include your paper or  any modifications in this survey and repository, please feel free to send email to (haoyang-comp.li@polyu.edu.hk) or open an issue with your paper's title, category, and a brief summary highlighting its key techniques. Thank you!
+
 
 ## Toxonomy and Papers
 
