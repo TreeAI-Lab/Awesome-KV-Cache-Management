@@ -3,7 +3,9 @@
 
 ### News
 
-**📢 New Benchmark Released (2025-02-18):** *"Exposing Numeracy Gaps: A Benchmark to Evaluate Fundamental Numerical Abilities in Large Language Models [[PDF]](https://arxiv.org/pdf/2502.11075)[[Dataset]](https://github.com/TreeAI-Lab/NumericBench)"* — proposing a long NumericBench to assess LLMs' numerical reasoning! 🚀
+**📢 Two Papers Accepted (2025-05-20):** Our survey has been accepted by TMLR 2025, and our numerical benchmark paper has been accepted by ACL 2025! 🚀
+
+**📢 Numerical Benchmark  Released (2025-02-18):** *"Exposing Numeracy Gaps: A Benchmark to Evaluate Fundamental Numerical Abilities in Large Language Models [[PDF]](https://arxiv.org/pdf/2502.11075)[[Dataset]](https://github.com/TreeAI-Lab/NumericBench)"* — proposing a long NumericBench to assess LLMs' numerical reasoning! 🚀
 
 
 
