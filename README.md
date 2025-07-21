@@ -1,7 +1,12 @@
 # Awesome-KV-Cache-Management
 
+LoopServe: An Adaptive Dual-phase LLM Inference Acceleration System for Multi-Turn Dialogues
+
 
 ### News
+
+**📢 Multi-turn KV Strategies and Benchmark Released (2025-07-18):** *"LoopServe: An Adaptive Dual-phase LLM Inference Acceleration System for Multi-Turn Dialogues [[PDF]]([https://arxiv.org/pdf/2502.11075](https://www.arxiv.org/abs/2507.13681))[[Dataset]]([https://github.com/TreeAI-Lab/NumericBench](https://huggingface.co/datasets/TreeAILab/Multi-turn_Long-context_Benchmark_for_LLMs))"* — proposing an adaptive dual-phase LLM inference acceleration system for multi-turn dialogues! 🚀
+
 
 **📢 Two Papers Accepted (2025-05-20):** Our survey has been accepted by TMLR 2025, and our numerical benchmark paper has been accepted by ACL 2025! 🚀
 
