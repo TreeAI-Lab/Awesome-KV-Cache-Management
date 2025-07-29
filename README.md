@@ -318,6 +318,8 @@
 
 | Year | Title                                                        | Type                 | Venue | Paper                                    | code                                                         |
 | ---- | ------------------------------------------------------------ | -------------------- | ----- | ---------------------------------------- | ------------------------------------------------------------ |
+| 2025 | eLLM: Elastic Memory Management Framework for Efficient LLM Serving   | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2506.15155) | |
+| 2025 | Apt-Serve: Adaptive Request Scheduling on Hybrid Cache for Scalable LLM Inference Serving | Architectural Design | ACM | [Link](https://dl.acm.org/doi/10.1145/3725394) |  |
 | 2024 | vTensor: Flexible Virtual Tensor Management for Efficient LLM Serving | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2407.15309) | [Link](https://github.com/antgroup/glake) ![](https://img.shields.io/github/stars/antgroup/glake.svg?style=social) |
 | 2024 | Unifying KV Cache Compression for Large Language Models with LeanKV | Architectural Design | arXiv | [Link](https://arxiv.org/pdf/2412.03131) |                                                              |
 | 2023 | Efficient Memory Management for Large Language Model Serving with PagedAttention | Architectural Design | SOSP  | [Link](https://arxiv.org/pdf/2309.06180) | [Link](https://github.com/vllm-project/vllm) ![](https://img.shields.io/github/stars/vllm-project/vllm.svg?style=social) |
