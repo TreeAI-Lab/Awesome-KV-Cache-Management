@@ -248,13 +248,13 @@
 
 | Year | Title                                                                                | Type              | Venue | Paper                                 | code                                                           |
 | ---- | ------------------------------------------------------------------------------------ | ----------------- | ----- | ------------------------------------- | -------------------------------------------------------------- |
-| 2019 | Fast Transformer Decoding: One Write-Head is All You Need                            | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/1911.02150) |                                                                |
-| 2023 | GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints | Intra-Layer Grouping | EMNLP | [Link](https://arxiv.org/pdf/2305.13245) | [Link](https://github.com/fkodom/grouped-query-attention-pytorch) ![](https://img.shields.io/github/stars/fkodom/grouped-query-attention-pytorch.svg?style=social)|
 | 2024 | Optimised Grouped-Query Attention Mechanism for Transformers | Intra-Layer Grouping | ICML | [Link](https://openreview.net/pdf?id=13MMghY6Kh) |                                                                |
 | 2024 | Weighted Grouped Query Attention in Transformers | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2407.10855) |                                                                |
 | 2024 | QCQA: Quality and Capacity-aware grouped Query Attention  | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2406.10247) | [Non-official Link](https://github.com/vinayjoshi22/qcqa) ![](https://img.shields.io/github/stars/vinayjoshi22/qcqa.svg?style=social)|      |
 | 2024 | Beyond Uniform Query Distribution: Key-Driven Grouped Query Attention | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/2408.08454) | [Link](https://github.com/zohaib-khan5040/key-driven-gqa) ![](https://img.shields.io/github/stars/zohaib-khan5040/key-driven-gqa.svg?style=social)|
 | 2023 | GQKVA: Efficient Pre-training of Transformers by Grouping Queries, Keys, and Values | Intra-Layer Grouping | NeurIPS | [Link](https://arxiv.org/pdf/2311.03426) |                                                                |
+| 2023 | GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints | Intra-Layer Grouping | EMNLP | [Link](https://arxiv.org/pdf/2305.13245) | [Link](https://github.com/fkodom/grouped-query-attention-pytorch) ![](https://img.shields.io/github/stars/fkodom/grouped-query-attention-pytorch.svg?style=social)|
+| 2019 | Fast Transformer Decoding: One Write-Head is All You Need                            | Intra-Layer Grouping | arXiv | [Link](https://arxiv.org/pdf/1911.02150) |                                                                |
 
 ### Cross-Layer Sharing ([To Top👆🏻](#awesome-kv-cache-management))
 
