@@ -116,7 +116,7 @@
 | 2024 | RetrievalAttention: Accelerating Long-Context LLM Inference via Vector Retrieval           | Dynamic Selection without Permanent Eviction | arXiv | [Link](https://arxiv.org/pdf/2409.10516) | [Link](https://github.com/jzbjyb/ReAtt) ![](https://img.shields.io/github/stars/jzbjyb/ReAtt.svg?style=social)                                     |
 | 2024 | Human-like Episodic Memory for Infinite Context LLMs                                       | Dynamic Selection without Permanent Eviction | arXiv | [Link](https://arxiv.org/pdf/2407.09450) |                                                                                                                                               |
 | 2024 | ClusterKV: Manipulating LLM KV Cache in Semantic Space for Recallable Compression          | Dynamic Selection without Permanent Eviction | arXiv | [Link](https://arxiv.org/pdf/2412.03213) |             |                                                                                                                                
-
+| 2024 | Loki: Low-rank Keys for Efficient Sparse Attention                                         | Dynamic Selection without Permanent Eviction | arXiv | [Link](https://arxiv.org/pdf/2406.02542) | [Link](https://github.com/hpcgroup/loki) ![](https://img.shields.io/github/stars/hpcgroup/loki.svg?style=social)            |  
 
 ## KV Cache Budget Allocation
 
