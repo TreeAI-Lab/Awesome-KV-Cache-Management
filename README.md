@@ -76,6 +76,7 @@
     - [I/O-based Design (To Top👆🏻)](#io-based-design-to-top)
     - [Heterogeneous Design (To Top👆🏻)](#heterogeneous-design-to-top)
     - [SSD-based Design (To Top👆🏻)](#ssd-based-design-to-top)
+- [Tools and Platforms](#tools-and-platforms)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
 
 ---
@@ -415,6 +416,12 @@
 | 2023 | FlexGen: High-Throughput Generative Inference of Large Language Models                   | SSD-based Design | ICML  | [Link](https://proceedings.mlr.press/v202/sheng23a/sheng23a.pdf) | [Link](https://github.com/FMInference/FlexLLMGen) ![](https://img.shields.io/github/stars/FMInference/FlexLLMGen.svg?style=social) |
 
 ---
+
+# Tools and Platforms
+
+Practical tools, registries, and platforms for managing, sharing, and deploying KV-cache artifacts in production LLM serving.
+
+- [KV Cache Store](https://kvcachestore.com/) — Hosted KV-cache artifact registry plus an open-source Rust CLI. Precompute, verify, quantize, and share attention states across RAG and long-context prompts to cut prefill cost and latency. ([CLI source](https://github.com/kvcachestore/kvcdn))
 
 # Datasets and Benchmarks
 
