@@ -398,6 +398,7 @@
 
 | Year | Title                                                                                               | Type                 | Venue | Paper                                 | code |
 | ---- | --------------------------------------------------------------------------------------------------- | -------------------- | ----- | ------------------------------------- | ---- |
+| 2026 | The FastPath Agentic Recipe: 50% More Agents and 60% More Throughput at Equal P90 Interactivity on Stock SGLang | Heterogeneous Design | Zenodo | [Link](https://doi.org/10.5281/zenodo.24457433) |      |
 | 2025 | HeadInfer: Memory-Efficient LLM Inference by Head-wise Offloading                                   | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2502.12574) |      |
 | 2025 | Parallel CPU-GPU Execution for LLM Inference on Constrained GPUs                                    | Heterogeneous Design | arXiv | [Link](https://arxiv.org/abs/2506.03296) |      |
 | 2024 | NEO: Saving GPU Memory Crisis with CPU Offloading for Online LLM Inference                          | Heterogeneous Design | arXiv | [Link](https://arxiv.org/pdf/2411.01142) |      |
